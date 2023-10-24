@@ -1,0 +1,25 @@
+@media print {
+
+    nav {
+        display: none;
+      }
+    footer {
+        display: none;
+    }
+    header {
+        display: none
+    }
+    article {
+        padding: 0px;
+    }
+    article p
+		{
+			text-align: justify ;
+			text-indent: 1.5em ;
+			line-height: 1.2em ;
+		}
+    /* utile pour montrer les liens */
+        :after {
+            content:"("attr(href)")";
+        }
+}
