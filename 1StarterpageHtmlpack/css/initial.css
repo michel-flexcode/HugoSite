@@ -1,61 +1,69 @@
-/* Commenter et compartimentation du code CSS */
+    /* Commenter et compartimentation du code CSS */
 
-/* Initialisation grid-template-area  */
+    /* Initialisation grid-template-area  */
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    min-height: 100vh;
-}
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        min-height: 100vh;
+    }
 
-header {
-    grid-area: header;
-}
+    header {
+        grid-area: header;
+    }
 
-nav {
-    grid-area: nav;
-}
+    nav {
+        grid-area: nav;
+    }
 
-main {
-    grid-area: main;
-}
+    main {
+        grid-area: main;
+    }
 
-aside {
-    grid-area: aside;
-}
+    aside {
+        grid-area: aside;
+    }
 
-footer {
-    grid-area: footer;
-}
+    footer {
+        grid-area: footer;
+    }
 
-/* Flexbox et agencement de la Nav */
 
-.principal {
-    display: flex;
-    justify-content: center;
-    background-color: #f2f2f2;
-    padding: 0.625rem; /* Equivalent to 10px / 16px (assuming root font size is 16px) */
-}
 
-.principal ul {
-    display: flex;
-    /* padding: 0; */
-}
+    /* Flexbox et agencement de la Nav */
 
-.principal ul li {
-     margin-right: 10px; 
-}
+    .principal {
+        display: flex;
+        background-color: #f2f2f2;
+        padding: 0.625rem;
+    }
 
-.principal ul li a {
-    color: #333;
-    /* padding: 5px;*/
-}
+    .principal ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        width: 100%;
+    }
 
-.principal ul li a:hover {
-    background-color: #ccc; 
-}
+    .principal ul li {
+        margin-right: 10px;
+    }
+
+    .principal ul li a {
+        color: #333;
+    }
+
+    .principal ul li a:hover {
+        background-color: #ccc;
+    }
+
+    /* Placement des bordures noires */
+
+    aside {
+        background-color: black;
+    }
